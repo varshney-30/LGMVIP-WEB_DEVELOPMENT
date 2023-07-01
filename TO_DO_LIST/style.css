@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container
+{
+    background-size: cover;
+    background-image: url(i3.jpg);
+    width: 70%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+    border: 8px solid black;
+    border-radius: 15px;
+}
+
+.input-container
+{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container h1
+{
+    position: sticky;
+    font-size: 35px;
+}
+
+.input-container h2
+{
+    position: sticky;
+    font-family: 'Kaushan Script';
+}
+
+.input-container input
+{
+    background-color:lavenderblush;
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 22px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.input-container input[type = "text"]
+{
+    width: 70%;
+}
+
+.input-container input[type = "button"]
+{
+    background-color:green;
+    color: #fff;
+    font-weight: 800;
+    margin-left: 8px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.input-container input[type = "button"]:hover
+{
+    background-color:rgb(28, 174, 28);
+}
+
+ul
+{
+    width:65%;
+    max-width: 700px;
+}
+
+ul li
+{
+    background-color:navajowhite;
+    list-style-type: none;
+    cursor: pointer;
+    border: 2px solid #a19f9f;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+ul li:hover
+{
+    background-color: #cbcaca;
+}
+
+ul li p
+{
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.btn
+{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.delete
+{
+    color:red;
+}
+
+.edit
+{
+    color: green;
+}
+
+@media(max-width: 700px){
+    .container{
+        height: 450px;
+        width: 350px;
+    }
+
+    .input-container h1
+    {
+        position: sticky;
+        font-size: 35px;
+    }
+
+    .input-container h2
+    {
+        position: sticky;
+        font-family: 'Kaushan Script';
+    }
+    
+    .input-container input[type = "button"]
+    {
+        margin: 0px;
+        padding: 10px 14px;
+        cursor: pointer;
+    }
+
+    .input-container input[type = "button"]:hover
+    {
+        background-color:rgb(28, 174, 28);
+    }
+
+    ul li{
+        display: block;
+        align-items: center;
+    }
+
+}
